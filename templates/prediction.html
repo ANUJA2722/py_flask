@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crop Prediction</h2>
+
+    <form method="POST", action="/predict">
+        <b> N :  <input type="text", name='N', placeholder=""> <br><br>
+         P :  <input type="text", name='P', placeholder=""> <br><br>
+         K :  <input type="text", name='K', placeholder=""> <br><br>
+         Temperature : <input type="text", name='temp', placeholder=""> <br><br>
+         Humidity : <input type="text", name='humidity', placeholder=""> <br><br>
+         pH : <input type="text", name='ph', placeholder=""> <br><br>
+         Rainfall : <input type="text", name='rainfall', placeholder=""> <br><br>
+         <br></b>
+         <input type="submit" , value='predict' >
+     </form>
+    <h2>Crop predicted : {{data}}</h2>
+</body>
+</html>
